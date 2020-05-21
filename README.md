@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://via.placeholder.com/150" alt="wrt-hisicam">
+ <img src="images/wrt-hisicam.jpg" alt="wrt-hisicam">
 </p>
 
 <h3 align="center">WRT-HisiCam</h3>
@@ -15,14 +15,35 @@
 ## :eyeglasses: About
 This is attempt to make full functional firmware for HiSilicon based ip cameras.
 *Full functional* in our sense is firmware that has minimum general management functions (network control),
-easy update/upgrade and some kind of web user interface. OpenWrt is only one known by us project, that targetted to embedded devices and has above features out of the box.
+easy update/upgrade and some kind of web user interface. OpenWrt is only one known project, that targets embedded devices and has above features out of the box.
 
 If you are looking for development environment take a look on [BR-HisiCam](https://github.com/OpenHisiIpCam/br-hisicam).
-It is more suitable for fast start and quick experiments.
 
-## Thinkgs you have to know
+## What WRT-HisiCam is and what it is not
 
-...
+WRT-HisiCam is firmware build based on [OpenWrt](https://openwrt.org/) 
+
+## Chip support
+
+| chips                                                 | family        | kernel |support|
+|-------------------------------------------------------|---------------|--------|-------|
+| hi3516av100, hi3516dv100                              | hi3516av100   |4.9.37  |Yes    |
+| hi3519v101,  hi3516av200                              | hi3516av200   |3.18.20 |Yes    |
+| hi3516cv100, hi3518cv100, hi3518ev100                 | hi3516cv100   |3.0.8   |NO     |
+| hi3516cv200, hi3518ev200, hi3518ev201                 | hi3516cv200   |4.9.37  |Yes    |
+| hi3516cv300, hi3516ev100                              | hi3516cv300   |3.18.20 |Yes    |
+| hi3516cv500, hi3516dv300, hi3516av300                 | hi3516cv500   |4.9.37  |Yes    |
+| hi3516ev300, hi3516ev200, hi3516dv200, hi3518ev300    | hi3516ev200   |4.9.37  |Yes    |
+| hi3519av100                                           | hi3519av100   |4.9.37  |TODO   |
+| hi3559av100                                           | hi3559av100   |4.9.37  |TODO   |
+
+## Usage
+
+## Build from scratch
+
+## Roadmap
+
+
 
 ## Patching
 
