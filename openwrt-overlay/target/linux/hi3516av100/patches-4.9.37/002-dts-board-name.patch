@@ -1,0 +1,12 @@
+diff -uraN a/arch/arm/boot/dts/hi3516a-demb.dts b/arch/arm/boot/dts/hi3516a-demb.dts
+--- a/arch/arm/boot/dts/hi3516a-demb.dts	2020-05-24 16:38:56.438705355 +0300
++++ b/arch/arm/boot/dts/hi3516a-demb.dts	2020-05-24 16:47:29.562270035 +0300
+@@ -21,7 +21,7 @@
+ #include "hi3516a.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3516A DEMO Board";
++	model = "HiSilicon hi3516av100/hi3516dv100 compatible device";
+ 	compatible = "hiSilicon,hi3516a";
+ 
+ 	cpus {

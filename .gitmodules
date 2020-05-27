@@ -1,0 +1,6 @@
+[submodule "hiburn"]
+	path = hiburn
+	url = https://github.com/OpenHisiIpCam/hiburn
+[submodule "genimage"]
+	path = genimage
+	url = https://github.com/pengutronix/genimage

@@ -1,0 +1,13 @@
+config 'memory_settings' 'memory'
+        option 'ram_size'       '128M'
+        option 'ram_linux_size' '64M'
+        option 'ram_mpp_size'   '64M'
+
+config 'cmos_settings' 'cmos'
+        option 'cmos_driver'    'imx323_spi'
+        option 'cmos_data'      'dc'
+        option 'cmos_control'   'spi'
+        option 'cmos_bus'       '0'
+
+config 'deprecated_settings' 'deprecated'
+        option 'chip'           'hi3516cv300'

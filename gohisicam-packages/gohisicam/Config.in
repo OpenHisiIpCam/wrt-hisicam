@@ -1,0 +1,68 @@
+# GoHisiCam configuration
+
+config GOHISICAM_FAMILY
+	string
+	default "hi3516av100" if TARGET_hi3516av100
+    default "hi3516av200" if TARGET_hi3516av200
+    default "hi3516cv100" if TARGET_hi3516cv100
+    default "hi3516cv200" if TARGET_hi3516cv200
+    default "hi3516cv300" if TARGET_hi3516cv300
+    default "hi3516cv500" if TARGET_hi3516cv500
+    default "hi3516ev200" if TARGET_hi3516ev200
+
+choice
+    bool "Deploy"
+    help 
+        Deploy type
+
+    config GOHISICAM_EMPTY
+        bool "No WebUI"
+        help
+            Just GoHisiCam 
+
+    config GOHISICAM_EMBEDUI
+        bool "Embedded WebUI"
+        help
+            GoHisiCam and embedded webUI
+
+    config GOHISICAM_LUCI
+        bool "LuCI WebUI integration"
+        help
+            GoHisiCam tuned to work with LuCI webUI
+
+endchoice
+
+choice
+    bool "HiSilicon family"
+	help
+        HiSilicon SoC family binaries will be installed for.
+
+    config GOHISICAM_HI3516AV100
+        bool "hi3516av100"
+        depends on TARGET_hi3516av100
+
+    config GOHISICAM_HI3516AV200
+        bool "hi3516av200"
+        depends on TARGET_hi3516av200
+
+    config GOHISICAM_HI3516CV100
+        bool "hi3516cv100"
+        depends on TARGET_hi3516cv100
+
+    config GOHISICAM_HI3516CV200
+        bool "hi3516cv200"
+        depends on TARGET_hi3516cv200
+
+    config GOHISICAM_HI3516CV300
+	    bool "hi3516cv300"
+	    depends on TARGET_hi3516cv300
+
+    config GOHISICAM_HI3516CV500
+        bool "hi3516cv500"
+        depends on TARGET_hi3516cv500
+
+    config GOHISICAM_HI3516EV200
+	    bool "hi3516ev200"
+	    depends on TARGET_hi3516ev200
+
+endchoice

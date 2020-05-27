@@ -1,0 +1,68 @@
+{
+  "MGPEG_3840_2160": {
+    "Format": "mjpeg",
+    "Width": 3840,
+    "Height": 2160,
+    "Bitrate": 16384
+  },
+  "MGPEG_2592_1944": {
+    "Format": "mjpeg",
+    "Width": 2592,
+    "Height": 1944,
+    "Bitrate": 1024
+  },
+  "MGPEG_2592_1520": {
+    "Format": "mjpeg",
+    "Width": 2592,
+    "Height": 1520,
+    "Bitrate": 1024
+  },
+  "MGPEG_2304_1296": {
+    "Format": "mjpeg",
+    "Width": 2304,
+    "Height": 1296,
+    "Bitrate": 1024
+  },
+  "MGPEG_2048_1520": {
+    "Format": "mjpeg",
+    "Width": 2048,
+    "Height": 1520,
+    "Bitrate": 1024
+  },
+  "MGPEG_1920_1080": {
+    "Format": "mjpeg",
+    "Width": 1920,
+    "Height": 1080,
+    "Bitrate": 16384
+  },
+  "MGPEG_1280_720": {
+    "Format": "mjpeg",
+    "Width": 1280,
+    "Height": 720,
+    "Bitrate": 1024
+  },
+  "H264_1280_720_1M": {
+    "Format": "h264",
+    "Width": 1280,
+    "Height": 720,
+    "Bitrate": 1024
+  },
+  "H264_1920_1080_1M": {
+    "Format": "h264",
+    "Width": 1920,
+    "Height": 1080,
+    "Bitrate": 1024
+  },
+  "H265_1280_720_1M": {
+    "Format": "h265",
+    "Width": 1280,
+    "Height": 720,
+    "Bitrate": 1024
+  },
+  "H265_1920_1080_1M": {
+    "Format": "h265",
+    "Width": 1920,
+    "Height": 1080,
+    "Bitrate": 1024
+  }
+}

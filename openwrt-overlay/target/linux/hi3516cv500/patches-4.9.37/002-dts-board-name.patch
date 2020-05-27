@@ -1,0 +1,24 @@
+diff -uraN a/arch/arm/boot/dts/hi3516cv500-demb.dts b/arch/arm/boot/dts/hi3516cv500-demb.dts
+--- a/arch/arm/boot/dts/hi3516cv500-demb.dts	2020-05-24 16:01:56.453991739 +0300
++++ b/arch/arm/boot/dts/hi3516cv500-demb.dts	2020-05-24 16:16:32.007663827 +0300
+@@ -21,7 +21,7 @@
+ #include "hi3516cv500.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3516CV500 DEMO Board";
++	model = "HiSilicon hi3516cv500 compatible device";
+ 	compatible = "hisilicon,hi3516cv500";
+ 
+ 	memory {
+diff -uraN a/arch/arm/boot/dts/hi3516dv300-demb.dts b/arch/arm/boot/dts/hi3516dv300-demb.dts
+--- a/arch/arm/boot/dts/hi3516dv300-demb.dts	2020-05-24 16:01:56.453991739 +0300
++++ b/arch/arm/boot/dts/hi3516dv300-demb.dts	2020-05-24 16:17:00.059010616 +0300
+@@ -21,7 +21,7 @@
+ #include "hi3516dv300.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3516DV300 DEMO Board";
++	model = "HiSilicon hi3516dv300/hi3516av300 compatible device";
+ 	compatible = "hisilicon,hi3516dv300";
+ 
+ 	memory {

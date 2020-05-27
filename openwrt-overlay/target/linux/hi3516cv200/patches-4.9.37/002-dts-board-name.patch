@@ -1,0 +1,12 @@
+diff -uraN a/arch/arm/boot/dts/hi3518ev20x-demb.dts b/arch/arm/boot/dts/hi3518ev20x-demb.dts
+--- a/arch/arm/boot/dts/hi3518ev20x-demb.dts	2020-05-24 18:04:39.429173087 +0300
++++ b/arch/arm/boot/dts/hi3518ev20x-demb.dts	2020-05-24 18:18:01.306935891 +0300
+@@ -21,7 +21,7 @@
+ #include "hi3518ev20x.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3518EV20X DEMO Board";
++	model = "HiSilicon hi3516cv200/hi3518ev200/hi3518ev201 compatible device";
+ 	compatible = "hisilicon,hi3518ev20x";
+ 
+ 	aliases {

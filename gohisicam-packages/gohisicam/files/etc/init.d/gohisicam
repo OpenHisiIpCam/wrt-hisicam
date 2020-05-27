@@ -1,0 +1,55 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=1
+
+APP=/opt/gohisicam
+
+SERVICE_WRITE_PID=1
+SERVICE_DAEMONIZE=1
+
+#boot() {
+#    start
+#}
+
+start() {
+    config_load gohisicam
+
+    local RAM_SIZE
+    local RAM_LINUX_SIZE
+    local RAM_MPP_SIZE
+
+    config_get RAM_SIZE memory ram_size
+    config_get RAM_LINUX_SIZE memory ram_linux_size
+    config_get RAM_MPP_SIZE memory ram_mpp_size
+
+    local CMOS_DRIVER
+
+    config_get CMOS_DRIVER cmos cmos_driver
+
+    local CHIP
+
+    config_get CHIP deprecated chip
+
+    #LDC="-vi-ldc=false -vi-ldc-offset-x=0 -vi-ldc-offset-y=0 -vi-ldc-k=0"
+    #VI="-vi-flip-x=false -vi-flip-y=false -vi-x0=0 -vi-y0=0 -vi-width=1280 -vi-height=720 -vi-fps=30"
+
+    HTTP8080="-openapi-port 8080"
+
+    service_start $APP -logger-level=-1 \
+        -mem-total=$RAM_SIZE \
+        -mem-linux=$RAM_LINUX_SIZE \
+        -mem-mpp=$RAM_MPP_SIZE \
+        $HTTP8080 \
+        $VI \
+        $LDC \
+        -chip=$CHIP -cmos=$CMOS_DRIVER &
+
+}
+
+stop() {
+    #echo -n "Stopping debug"
+    #echo "OK"
+    service_stop $APP
+}
+

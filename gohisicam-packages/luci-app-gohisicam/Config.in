@@ -1,0 +1,8 @@
+menu "Configuration"
+		depends on PACKAGE_luci-app-gohisicam
+
+config LUCI_APP_GOHISICAM_PROXY
+    bool "Enable non authored proxy to GoHisiCam via uhttpd"
+    default no
+
+endmenu

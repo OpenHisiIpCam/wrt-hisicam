@@ -1,0 +1,12 @@
+diff -uarN a/arch/arm/boot/dts/hi3516a-demb.dts b/arch/arm/boot/dts/hi3516a-demb.dts
+--- a/arch/arm/boot/dts/hi3516a-demb.dts	2020-05-24 16:49:10.680428142 +0300
++++ b/arch/arm/boot/dts/hi3516a-demb.dts	2020-05-24 16:59:27.344616160 +0300
+@@ -157,7 +157,7 @@
+ 
+ &higmac {
+ 	phy-handle = <&ethphy>;
+-	phy-mode = "rgmii";
++	phy-mode = "rmii";
+ };
+ 
+ &mmc0 {

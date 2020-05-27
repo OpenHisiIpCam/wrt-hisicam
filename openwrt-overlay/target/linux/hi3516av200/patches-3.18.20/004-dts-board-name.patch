@@ -1,0 +1,48 @@
+diff -uraN a/arch/arm/boot/dts/hisi-hi3516av200-demb.dts b/arch/arm/boot/dts/hisi-hi3516av200-demb.dts
+--- a/arch/arm/boot/dts/hisi-hi3516av200-demb.dts	2020-05-24 17:41:39.159693242 +0300
++++ b/arch/arm/boot/dts/hisi-hi3516av200-demb.dts	2020-05-24 17:43:45.463297354 +0300
+@@ -21,7 +21,7 @@
+ #include "hisi-hi3516av200.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3516AV200 DEMO Board";
++	model = "HiSilicon hi3516av200 compatible device";
+ 	compatible = "hisilicon,hi3516av200";
+ 
+ 	cpus {
+diff -uraN a/arch/arm/boot/dts/hisi-hi3516av200-hmp-demb.dts b/arch/arm/boot/dts/hisi-hi3516av200-hmp-demb.dts
+--- a/arch/arm/boot/dts/hisi-hi3516av200-hmp-demb.dts	2020-05-24 17:41:39.159693242 +0300
++++ b/arch/arm/boot/dts/hisi-hi3516av200-hmp-demb.dts	2020-05-24 17:44:07.214573981 +0300
+@@ -21,7 +21,7 @@
+ #include "hisi-hi3516av200.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3516AV200 DEMO Board";
++	model = "HiSilicon hi3516av200 compatible device";
+ 	compatible = "hisilicon,hi3516av200";
+ 
+ 	chosen {
+diff -uraN a/arch/arm/boot/dts/hisi-hi3519v101-demb.dts b/arch/arm/boot/dts/hisi-hi3519v101-demb.dts
+--- a/arch/arm/boot/dts/hisi-hi3519v101-demb.dts	2020-05-24 17:41:39.159693242 +0300
++++ b/arch/arm/boot/dts/hisi-hi3519v101-demb.dts	2020-05-24 17:44:23.566036026 +0300
+@@ -21,7 +21,7 @@
+ #include "hisi-hi3519v101.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3519V101 DEMO Board";
++	model = "HiSilicon hi3519v101 compatible device";
+ 	compatible = "hisilicon,hi3519v101";
+ 
+ 	cpus {
+diff -uraN a/arch/arm/boot/dts/hisi-hi3519v101-hmp-demb.dts b/arch/arm/boot/dts/hisi-hi3519v101-hmp-demb.dts
+--- a/arch/arm/boot/dts/hisi-hi3519v101-hmp-demb.dts	2020-05-24 17:41:39.159693242 +0300
++++ b/arch/arm/boot/dts/hisi-hi3519v101-hmp-demb.dts	2020-05-24 17:44:34.369683255 +0300
+@@ -21,7 +21,7 @@
+ #include "hisi-hi3519v101.dtsi"
+ 
+ / {
+-	model = "Hisilicon HI3519V101 DEMO Board";
++	model = "HiSilicon hi3519v101 compatible device";
+ 	compatible = "hisilicon,hi3519v101";
+ 
+ 	chosen {
