@@ -65,9 +65,9 @@ Most probably we will support only camera modules with RAM >= 128M.
 
 For detailed modules description check [BR-HisiCam boards catalog](https://github.com/OpenHisiIpCam/br-hisicam/tree/master/br-ext-hisicam/board#boards-catalog).
 
-## Usage
+## :rocket: Usage
 
-TODO
+**TODO**
 
 ## :hammer: Build from scratch
 
