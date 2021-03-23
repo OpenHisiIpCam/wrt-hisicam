@@ -3,7 +3,7 @@ prepare: download openwrt-patch openwrt-prepare genimage-build
 download: openwrt submodules
 
 submodules:
-	git submodule update --init --recursive 
+	git submodule update --init --recursive
 
 openwrt:
 	git clone https://github.com/openwrt/openwrt.git --depth 1 -b v19.07.3 openwrt
@@ -22,7 +22,5 @@ genimage-build:
 
 ubuntu-deps:
 	sudo apt-get install \
-		libconfuse-dev 
-
-
-
+		build-essential libconfuse-dev libncurses-dev gawk unzip wget python automake \
+		pkg-config git

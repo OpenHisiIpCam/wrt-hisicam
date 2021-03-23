@@ -37,7 +37,7 @@ This means that adding new and improving existing functionality requires some te
 For feature requests and contribution read corresponding [section](#feature-requests-and-contribution). 
 
 If your case is rather different than this project take a look on [BR-HisiCam](https://github.com/OpenHisiIpCam/br-hisicam)
-this is our test linux enviroiment for HiSilicon SoCs, suitible for developing any projects from scratch.
+this is our test linux environment for HiSilicon SoCs, suitible for developing any projects from scratch.
 
 ## :camera: Hardware support
 
@@ -76,6 +76,16 @@ foo@bar:~$ git clone --recursive https://github.com/OpenHisiIpCam/wrt-hisicam --
 foo@bar:~$ cd wrt-hisicam
 foo@bar:~$ make ubuntu-deps
 foo@bar:~$ make prepare
+foo@bar:~$ cd openwrt && make menuconfig
+```
+
+In top menu item select `Target System` and then your family platform. Then
+select item `Subtarget` and your specific SoC type. Then select `Exit` and save
+new configuration.
+
+```console
+foo@bar:~$ make defconfig
+foo@bar:~$ make -j$(nproc)
 ```
 
 **TODO**
