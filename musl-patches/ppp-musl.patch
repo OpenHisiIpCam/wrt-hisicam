@@ -1,0 +1,48 @@
+--- a/pppd/plugins/pppol2tp/openl2tp.c
++++ b/pppd/plugins/pppol2tp/openl2tp.c
+@@ -19,6 +19,9 @@
+ 
+ /* pppd plugin for interfacing to openl2tpd */
+ 
++#include <linux/libc-compat.h>
++
++
+ #include <unistd.h>
+ #include <string.h>
+ #include <stdlib.h>
+
+--- a/pppd/plugins/rp-pppoe/plugin.c
++++ b/pppd/plugins/rp-pppoe/plugin.c
+@@ -25,6 +25,9 @@
+ static char const RCSID[] =
+ "$Id: plugin.c,v 1.17 2008/06/15 04:35:50 paulus Exp $";
+ 
++#include <linux/libc-compat.h>
++
++
+ #define _GNU_SOURCE 1
+ #include "pppoe.h"
+ 
+--- a/pppd/plugins/pppol2tp/pppol2tp.c
++++ b/pppd/plugins/pppol2tp/pppol2tp.c
+@@ -20,6 +20,9 @@
+  *  as published by the Free Software Foundation; either version
+  *  2 of the License, or (at your option) any later version.
+  */
++
++#include <linux/libc-compat.h>
++
+ #include <unistd.h>
+ #include <string.h>
+ #include <stdlib.h>
+--- a/pppd/plugins/pptp/pptp.c
++++ b/pppd/plugins/pptp/pptp.c
+@@ -24,6 +24,8 @@
+ #include <config.h>
+ #endif
+ 
++#include <linux/libc-compat.h>
++
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <sys/un.h>
