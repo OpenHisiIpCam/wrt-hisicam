@@ -19,6 +19,9 @@
 - [Feature requests and contribution](#feature-requests-and-contribution)
 
 ## :eyeglasses: About
+
+**This repo is freezed, will not be maintained or improved.**
+
 This is attempt to make full functional firmware for HiSilicon based ip cameras.
 *Full functional* in our sense is firmware that has minimum general management functions (network control),
 easy update/upgrade and some kind of web user interface. OpenWrt is only one known project, that targets embedded devices and has above features out of the box.
